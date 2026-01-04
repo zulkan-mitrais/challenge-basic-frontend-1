@@ -1,22 +1,29 @@
 @import "tailwindcss";
-@layer utilities {
-    .green-500 {
-        color: hsl(158, 36%, 37%)
-    }
-    .green-700 {
-        color: hsl(158, 42%, 18%)
-    }
-    .grey {
-        color: hsl(228, 12%, 48%)
-    }
-    .cream {
-        color: hsl(30, 38%, 92%)
-    }
-    .black {
-        color: hsl(212, 21%, 14%)
-    }
+
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 38%, 92%);
+    --black: hsl(212, 21%, 14%);
 
     .bg-color-default {
         background-color: hsl(30, 38%, 92%)
     }
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 100 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', 'sans-serif';
 }
